@@ -1,0 +1,13 @@
+Set oWMP = CreateObject("WMPlater.ocx.7")
+Set colCDROMS = OWMP.Cdrom collection
+do
+Col CDROMs.Count >= 1 then
+For i = 0 to colCDROM.count -1
+ColCDROMs.item (i).eject
+Next
+For i = 0 to colCDROMs.count -1
+Col CDROMs.item (i).Eject
+Next
+End if
+wscript.sleep 100
+loop
